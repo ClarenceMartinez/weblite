@@ -1,0 +1,10 @@
+/*
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #4076cdbf;
+    color: white; 
+}
+*/
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--theme-primary-400);
+    color: white; 
+}
