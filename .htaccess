@@ -1,0 +1,14 @@
+# BEGIN custom php.ini PHP54
+#<IfModule mod_suphp.c>
+ #   suPHP_ConfigPath /home2/ingfix/public_html/sicov
+#</IfModule>
+# END custom php.ini
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+    RewriteBase /pangeaco/
+	#RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?$1 [L] 
+</IfModule>
