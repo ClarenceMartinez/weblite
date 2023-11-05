@@ -517,6 +517,30 @@ $route['getFormatCertMasivoOc']                  = 'cf_orden_compra/C_aten_masiv
 $route['procesarFileMasivoAtenSolCertOcPan']     = 'cf_orden_compra/C_aten_masivo_sol_certi_oc/procesarFileMasivoAtenSolCreaOc';
 $route['cargaAtenMasivaSolCertOcPan']            = 'cf_orden_compra/C_aten_masivo_sol_certi_oc/updateMasivoSolCreacionOC';
 
+
+/** MASIVO OC DISENO **/
+$route['atenMasivoSolOcCreaDiseno'] 				= 'cf_orden_compra/C_aten_masivo_sol_crea_oc_diseno';
+$route['procesarFileMasivoAtenSolCreaOcPanDiseno'] 	= 'cf_orden_compra/C_aten_masivo_sol_crea_oc_diseno/procesarFileMasivoAtenSolCreaOc';
+$route['cargaAtenMasivaSolCreaOcPanDiseno'] 		= 'cf_orden_compra/C_aten_masivo_sol_crea_oc_diseno/updateMasivoSolCreacionOC';
+
+
+
+$route['ateMaEdiOcDiseno']              				= 'cf_orden_compra/C_aten_masivo_sol_edi_oc_diseno';
+$route['procesarFileMasivoAtenSolEdiOcPanDiseno']     	= 'cf_orden_compra/C_aten_masivo_sol_edi_oc_diseno/procesarFileMasivoAtenSolCreaOc';
+$route['cargaAtenMasivaSolEdiOcPanDiseno']            	= 'cf_orden_compra/C_aten_masivo_sol_edi_oc_diseno/updateMasivoSolCreacionOC';
+
+$route['ateMaCertOcDiseno']             				= 'cf_orden_compra/C_aten_masivo_sol_certi_oc_diseno';
+$route['procesarFileMasivoAtenSolCertOcPanDiseno']     		= 'cf_orden_compra/C_aten_masivo_sol_certi_oc_diseno/procesarFileMasivoAtenSolCreaOc';
+$route['cargaAtenMasivaSolCertOcPanDiseno']            		= 'cf_orden_compra/C_aten_masivo_sol_certi_oc_diseno/updateMasivoSolCreacionOC';
+
+$route['ateAcToPdtOcDiseno']                              = 'cf_orden_compra/C_aten_masivo_sol_acta_pdt_oc_diseno';
+$route['getFormatAcToPdtMasivoOcDiseno']                  = 'cf_orden_compra/C_aten_masivo_sol_acta_pdt_oc_diseno/getFormatoExcelCarga';
+$route['procesarFileMasivoAtenSolAcToPdtOcPanDiseno']     = 'cf_orden_compra/C_aten_masivo_sol_acta_pdt_oc_diseno/procesarFileMasivoAtenSolCreaOc';
+$route['cargaAtenMasivaSolAcToPdtOcPanDiseno']            = 'cf_orden_compra/C_aten_masivo_sol_acta_pdt_oc_diseno/updateMasivoSolCreacionOC';
+
+/** FIN MASIVO OC DISENO **/
+
+
 $route['dashboard']     = 'cf_reportes/C_dashboard';
 $route['drawLine']      = 'cf_reportes/C_dashboard/makeDataColum';
 

@@ -152,6 +152,8 @@ class M_bandeja_solicitud_oc_diseno extends CI_Model {
         } else {
             $this->db->update_batch('itemplan_x_solicitud_oc_diseno', $arrayUpdateSolicitudxItem, 'codigo_solicitud_oc');
            
+
+           log_message('error', $this->db->last_query());
             if($this->db->affected_rows() <= 0) {
                 $data['msj'] = 'error interno ixoc';
                 $data['error'] = EXIT_ERROR;

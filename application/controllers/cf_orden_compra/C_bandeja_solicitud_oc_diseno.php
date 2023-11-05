@@ -428,6 +428,9 @@ class C_bandeja_solicitud_oc_diseno extends CI_Controller {
                 $objPlanObra['itemplan']     = $itemplan;
                 $objPlanObra['costo_sap_diseno']    = $costo_sap;
 				$objPlanObra['estado_sol_oc_diseno'] = 'ATENDIDO';
+                $objPlanObra['solicitud_oc_anula_pos'] = null;
+                $objPlanObra['costo_unitario_mo_anula_pos'] = null;
+                $objPlanObra['estado_oc_anula_pos'] = null;
                 array_push($arrayUpdateSolicitud, $objSolicitud);
                 array_push($arrayUpdateSolicitudxItem, $objSolicitudxItem);
                 array_push($arrayUpdatePlanObra, $objPlanObra);
@@ -763,8 +766,8 @@ class C_bandeja_solicitud_oc_diseno extends CI_Controller {
             $arrayDataObra = $this->m_utils->getDataItemplanByCodOcCertiDiseno($codigo_solicitud);
             
             //SI NO ES TRUNCO SE CERTIFICA LA OBRA
-                $dataPlanObra = array(  'solicitud_oc_certi' => $codigo_solicitud,
-                                        'estado_oc_certi'	 => 'ATENDIDO'
+                $dataPlanObra = array(  'solicitud_oc_certi_diseno' => $codigo_solicitud,
+                                        'estado_oc_certi_diseno'	 => 'ATENDIDO'
                                         );
             
             
